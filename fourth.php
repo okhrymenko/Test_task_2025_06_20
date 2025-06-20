@@ -185,3 +185,22 @@ echo "\nSubtotal: $" . number_format($cart->getSubtotal(), 2) . "\n";
 echo "Tax (7%): $" . number_format($cart->getTax(), 2) . "\n";
 echo "Shipping: $" . number_format($cart->getShippingCost(), 2) . "\n";
 echo "Total: $" . number_format($cart->getTotal(), 2) . "\n";
+/*
+####################################################### Console Output ############################################################
+Customer: Jane Doe
+Addresses:
+ - 123 Main St New York, NY 10001
+ - 456 Second Ave Apt 2B Brooklyn, NY 11201
+
+Shipping to: 456 Second Ave Apt 2B Brooklyn, NY 11201
+
+Cart Items:
+- 2 x T-shirt @ $25 = $50.00
+- 1 x Shoes @ $80 = $80.00
+- 1 x Hat @ $15 = $15.00
+
+Subtotal: $145.00
+Tax (7%): $10.15
+Shipping: $10.00
+Total: $165.15
+*/
