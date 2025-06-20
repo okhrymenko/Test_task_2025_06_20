@@ -151,3 +151,23 @@ echo "\nSubtotal: $" . number_format($cart->getSubtotal(), 2) . "\n";
 echo "Tax (7%): $" . number_format($cart->getTax(), 2) . "\n";
 echo "Shipping: $" . number_format($cart->getShippingCost(), 2) . "\n";
 echo "Total: $" . number_format($cart->getTotal(), 2) . "\n";
+
+/*
+########################################## Console Output ####################################################
+Customer: Alice Smith
+Addresses:
+ - 123 Main St New York, NY 10001
+ - 987 Second Ave Apt 5B New York, NY 10002
+
+Shipping to: 123 Main St New York, NY 10001
+
+Cart Items:
+- 3 x Book @ $12 = $36.00
+- 1 x Laptop @ $950 = $950.00
+
+Subtotal: $986.00
+Tax (7%): $69.02
+Shipping: $10.00
+Total: $1065.02
+*/
+    
